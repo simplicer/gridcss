@@ -1,2 +1,2 @@
-# Grid CSS v1.0
+# Grid CSS v1.0 Website
 
