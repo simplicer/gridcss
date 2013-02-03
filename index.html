@@ -84,28 +84,26 @@
 		</script>
 		<script src="assets/js/jquery.gridcss.js"></script>
 		<!-- Configure plugins >
-			<script>
+		<script>
+			$(document).ready(function(){
 				// Load Tabs. Add .tabs class to list tab.
-				$(document).ready(function(){
-					$('.tabs').tabify();
-				});
+				$('.tabs').tabify();
+
 				// Load Elastic
-				$(document).ready(function(){
-					$('textarea').elastic();
-				});
+				$('textarea').elastic();
+
 				// Load Notify
-				$(document).ready(function(){
-					$('#idnotify').notify({ // Default values
-						show: true, // Show message (true) or arrow (false)
-						slideTime: 0, // Time to slideOut. 0 is no slideOut.
-						close: true, // Avoid close notify.
-						arrow: true, // Show arrow to slideIn when message is close.
-						color: "#888", // Color of text.
-						bgcolor: "#FF6", // Background-color of notify.
-						opacity: ".8" // Opacity of message box.
-					});
+				$('#idnotify').notify({ // Default values
+					show: true, // Show message (true) or arrow (false)
+					slideTime: 0, // Time to slideOut. 0 is no slideOut.
+					close: true, // Avoid close notify.
+					arrow: true, // Show arrow to slideIn when message is close.
+					color: "#888", // Color of text.
+					bgcolor: "#FF6", // Background-color of notify.
+					opacity: ".8" // Opacity of message box.
 				});
-			</script>
+			});
+		</script>
 		<! -->
 
 	</body>
