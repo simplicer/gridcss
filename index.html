@@ -1,66 +1,306 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Gridcss by zeura</title>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Gridcss</h1>
-        <p>Grid CSS Free Framework</p>
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <p class="view"><a href="https://github.com/zeura/gridcss">View the Project on GitHub <small>zeura/gridcss</small></a></p>
+        <link rel="stylesheet" href="assets/css/gridcss.dev.css">
+        <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
+        <style>
+			#header { border-bottom: 1px solid #CCC; }
+			#footer { background-color: #555; }
+			#footer p { color: #DDD; }
+			#footer a, #footer a:hover { font-weight: bold; }
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+        
+		<!-- Header -->
+        <div class="super-container" id="header">
+			<header class="row">
+				<div class="col6">
+					<h1>Grid CSS</h1>
+				</div>
+				<div class="col6">
+					<p>Facebook</p>
+				</div>
+			</header>
+		</div>
+		<!-- Nav -->
+        <div class="super-container" id="aside">
+			<div class="row">
+				<!-- Aside -->
+				<div class="col12" id="nav">
+					<ul class="tabs">
+						<li><a href="#home" class="active">Home</a></li>
+						<li><a href="#scaffolding">Scaffolding</a></li>
+						<li><a href="#typography">Typography</a></li>
+						<li><a href="#forms">Forms</a></li>
+						<li><a href="#messages">Messages</a></li>
+						<li><a href="#extras">Extras</a></li>
+					</ul>
+				</div>
+				<!-- Body -->
+				<div class="col12" id="home">
+					<h2>Description</h2>
+					<p>Welcome to GridCSS.com</p>
+				</div>
+				<div id="scaffolding">
+					<div class="col12">
+						<h2 id="scaffolding">Scaffolding</h2>
+					</div>
+					<div class="col1"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col1</div></div>
+					<div class="col1"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col1</div></div>
+					<div class="col1"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col1</div></div>
+					<div class="col1"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col1</div></div>
+					<div class="col1"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col1</div></div>
+					<div class="col1"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col1</div></div>
+					<div class="col1"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col1</div></div>
+					<div class="col1"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col1</div></div>
+					<div class="col1"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col1</div></div>
+					<div class="col1"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col1</div></div>
+					<div class="col1"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col1</div></div>
+					<div class="col1"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col1</div></div>
+					
+					<div class="col12">&nbsp;</div>
+					
+					<div class="col2"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col2</div></div>
+					<div class="col2"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col2</div></div>
+					<div class="col2"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col2</div></div>
+					<div class="col2"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col2</div></div>
+					<div class="col2"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col2</div></div>
+					<div class="col2"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col2</div></div>
+
+					<div class="col12">&nbsp;</div>
+					
+					<div class="col3"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col3</div></div>
+					<div class="col3"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col3</div></div>
+					<div class="col3"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col3</div></div>
+					<div class="col3"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col3</div></div>
+
+					<div class="col12">&nbsp;</div>
+					
+					<div class="col4"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col4</div></div>
+					<div class="col4"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col4</div></div>
+					<div class="col4"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col4</div></div>
+
+					<div class="col12">&nbsp;</div>
+					
+					<div class="col6"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col6</div></div>
+					<div class="col6"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col6</div></div>
+
+					<h3>Push cells!!!</h3>
+
+					<div class="col12"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col12</div></div>
+
+					<div class="col12">&nbsp;</div>
+
+					<div class="col11 push1"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col11 push1</div></div>
+
+					<div class="col12">&nbsp;</div>
+
+					<div class="col10 push2"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col10 push2</div></div>
+
+					<div class="col12">&nbsp;</div>
+
+					<div class="col9 push3"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col9 push3</div></div>
+
+					<div class="col12">&nbsp;</div>
+
+					<div class="col8 push4"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col8 push4</div></div>
+
+					<div class="col12">&nbsp;</div>
+
+					<div class="col7 push5"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col7 push5</div></div>
+
+					<div class="col12">&nbsp;</div>
+
+					<div class="col6 push6"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col6 push6</div></div>
+
+					<div class="col12">&nbsp;</div>
+
+					<div class="col5 push7"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col5 push7</div></div>
+
+					<div class="col12">&nbsp;</div>
+
+					<div class="col4 push8"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col4 push8</div></div>
+
+					<div class="col12">&nbsp;</div>
+
+					<div class="col3 push9"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col3 push9</div></div>
+
+					<div class="col12">&nbsp;</div>
+
+					<div class="col2 push10"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col2 push10</div></div>
+
+					<div class="col12">&nbsp;</div>
+
+					<div class="col1 push11"><div style="border-radius: 5px; background-color: #EEE;border: 1px solid #CCC; padding: 10px 5px;" class="center">col1 push11</div></div>
+
+					<div class="col12">&nbsp;</div>
+					
+					<h2>BreadCrumbs</h2>
+					<ul class="crumbs">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Page One</a></li>
+						<li class="active"><a href="#">Page Two</a></li>
+					</ul>
 
 
-        <ul>
-          <li><a href="https://github.com/zeura/gridcss/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/zeura/gridcss/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/zeura/gridcss">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>Welcome to GitHub Pages.</h3>
+				</div>
+				
+				<div class="col12" id="typography">
+					<h2>Typography</h2>
+					<h1>Header h1</h1>
+					<h2>Header h2</h2>
+					<h3>Header h3</h3>
+					<h4>Header h4</h4>
+					<h5>Header h5</h5>
+					<h6>Header h6</h6>
+					<p>[p:] Lorem ipsum dolor sit amet, [strong:] <strong>consectetur adipisicing elit</strong>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. [em:] <em>Ut enim ad minim veniam</em>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in [link:] <a href="#">reprehenderit</a> in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, [.cite-inline:] <cite class="cite-inline">sunt in culpa qui officia deserunt mollit anim id est laborum.</cite></p>
+					<blockquote>
+						[blockquote, q, cite:] Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+					</blockquote>
+					<p>[code, pre:]</p>
+					<code>
+	&lt;html lang="es">
+		&lt;div class="active">
+			&lt;p>Loren ipsum.&lt;/p>
+		&lt;/div>
+	&lt;/html>
+					</code>
+					<h3>Lists</h3>
+										<ul class="">
+						<li>Primera</li>
+						<li>Segurda</li>
+						<ol class="">
+							<li>Uno</li>
+							<li>Dos</li>
+							<li>Tres</li>
+						</ol>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+						<li>Tercera</li>
+					</ul>
+					<ol class="">
+						<li>Uno</li>
+						<ul>
+							<li>Primera</li>
+							<li>Segurda</li>
+							<li>Tercera</li>
+						</ul>
+						<li>Dos</li>
+						<li>Tres</li>
+					</ol>
+				</div>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+				<div class="col12" id="forms">
+					<h2>Forms and buttons</h2>
+					<form action="#" method="post">
+						<label for="">Text</label>
+						<input type="text" placeholder="With focus green frame" />
+						<label for="">Field 1</label>
+						<span class="alert">Error messsage with class .alert</span>
+						<input type="text" placeholder="Frame red with .alert class" class="alert" />
+						<label for="">Field 2</label>
+						<span class="warning">Warning message with class .warning</span>
+						<input type="text" placeholder="Frame orange with .warning class" class="warning" />
+						<label for="">Checkbox</label>
+						<input type="checkbox" /><span class="input">One [span class .input]</span>
+						<input type="checkbox" /><span class="input">Two</span>
+						<label for="">Radio</label>
+						<input type="radio" name="radio"/><span class="input">Yes [span class .input]</span>
+						<input type="radio" name="radio"/><span class="input">Not</span>
+						<label for="">Select</label>
+						<select>
+							<option value="">One</option>
+							<option value="">Two</option>
+							<option value="">Three</option>
+							<option value="">Four</option>
+						</select>
+						<label for="">Textarea</label>
+						<textarea>Textarea autogrow with jquery plugin</textarea>
+						<div class="form-btn">
+							<input type="button" value="Normal Small" class="small" />
+							<input type="button" value="Normal Medium" />
+							<input type="button" value="Normal Large" class="large" />
+						</div>
+						<div class="form-btn">
+							<input type="button" value="Alert Small" class="small alert" />
+							<input type="button" value="Alert Medium" class="alert" />
+							<input type="button" value="Alert Large" class="large alert" />
+						</div>
+						<div class="form-btn">
+							<input type="button" value="Warning Small" class="small warning" />
+							<input type="button" value="Warning Medium" class="warning" />
+							<input type="button" value="Warning Large" class="large warning" />
+						</div>
+					</form>
+				</div>
+				<div class="col12" id="messages">
+					<h3>Tags</h3>
+					<span class="tag"><a href="#">Normal tag with link</a></span>
+					<span class="tag alert">Alert tag</span>
+					<span class="tag warning">Warning tag</span>
+					<h3>Messages</h3>
+					<p class="msg"><span class="close"></span>Information message</p>
+					<p class="msg alert"><span class="close"></span>Alert message</p>
+					<p class="msg warning"><span class="close"></span>Warning Message</p>
+				</div>
+				<div class="col12" id="extras">
+					<h2>Extras</h2>
+					<h3>Automatic tabs</h3>
+					<ul class="tabs">
+						<li class="active" ><a href="#one-tab">Tab One with .active</a></li>
+						<li><a href="#two-tab">Tab Two</a></li>
+						<li><a href="#three-tab">Tab Three</a></li>
+					</ul>
+					<div id="one-tab">
+							<p>Tab One content. Default content.</p>
+					</div>
+					<div id="two-tab">
+							<p>Tab Two content.</p>
+					</div>
+					<div id="three-tab">
+							<p>Tab Three content.</p>
+					</div>
+					<h3>Autogrow textarea. Autoload with jQuery</h3>
+					<textarea></textarea>
+					<h3>Messages with close button. Close load automatic.</h3>
+					<div class="msg"><span class="close"></span>Information message</div>
+					<h3>Deal notify.</h3>
+					<p>Add notify deal easily with .deal class. This notify is at top of page.</p>
+				</div>
+			</div>
+		</div>
+		<!-- Footer -->
+        <div class="super-container" id="footer">
+			<div class="row">
+				<div class="col6" id="copyright">
+					<p>&copy; 2013, <a href="http://ant.onio.org">Antonio Villamarin</a></p>
+				</div>
+				<div class="col6" id="powered">
+					<p class="right">Powered by <a href="http://www.gridcss.com">Grid CSS</a> MIT License</p>
+				</div>
+			</div>
+        </div>
+        
+       <div class="deal"><span class="close"></span><p>Welcome GridCSS</p></div>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+		<script src="assets/js/gridcss.js"></script>
 
-<h3>Designer Templates</h3>
+	</body>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/zeura">zeura</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
 </html>
