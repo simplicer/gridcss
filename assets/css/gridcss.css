@@ -591,13 +591,6 @@ ul.tabs li:first-child.active a 			{	margin-left: 0; }
 
 ul.tabs li:first-child a 					{	border-width: 1px 1px 0 1px; }
 
-ul.tabs-content								{	margin: 0;
-												display: block; }
-
-ul.tabs-content > li						{	display: none; }
-
-ul.tabs-content > li.active					{	display: block; }
-
 ul.tabs:before,
 ul.tabs:after								{	content: '\0020';
 												display: block;
