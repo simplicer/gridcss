@@ -8,7 +8,7 @@ $(document).ready(function () {
 	$('body').append('<div class="deal-arrow hide"></div>');
 	$('textarea').elastic();
 	$('.tabs').tabify();
-	$('.tabs2').tabify();
+	$('#tabs2').tabify();
 	$('.close').click( function(){
 		$(this).parent('.msg').toggleClass('hide').fadeOut('slow');
 		$(this).parent('.deal').toggleClass('hide').slideUp('slow');
