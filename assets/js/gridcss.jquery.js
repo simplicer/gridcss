@@ -5,87 +5,10 @@
 (function(e){jQuery.fn.extend({elastic:function(){var t=["paddingTop","paddingRight","paddingBottom","paddingLeft","fontSize","lineHeight","fontFamily","width","fontWeight","border-top-width","border-right-width","border-bottom-width","border-left-width","borderTopStyle","borderTopColor","borderRightStyle","borderRightColor","borderBottomStyle","borderBottomColor","borderLeftStyle","borderLeftColor"];return this.each(function(){function f(){var e=Math.floor(parseInt(n.width(),10));if(r.width()!==e){r.css({width:e+"px"});c(true)}}function l(e,t){var r=Math.floor(parseInt(e,10));if(n.height()!==r){n.css({height:r+"px",overflow:t})}}function c(e){var t=n.val().replace(/&/g,"&").replace(/ {2}/g," ").replace(/<|>/g,">").replace(/\n/g,"<br />");var u=r.html().replace(/<br>/ig,"<br />");if(e||t+" "!==u){r.html(t+" ");if(Math.abs(r.height()+i-n.height())>3){var a=r.height()+i;if(a>=o){l(o,"auto")}else if(a<=s){l(s,"hidden")}else{l(a,"hidden")}}}}if(this.type!=="textarea"){return false}var n=jQuery(this),r=jQuery("<div />").css({position:"absolute",display:"none","word-wrap":"break-word","white-space":"pre-wrap"}),i=parseInt(n.css("line-height"),10)||parseInt(n.css("font-size"),"10"),s=parseInt(n.css("height"),10)||i*3,o=parseInt(n.css("max-height"),10)||Number.MAX_VALUE,u=0;if(o<0){o=Number.MAX_VALUE}r.appendTo(n.parent());var a=t.length;while(a--){r.css(t[a].toString(),n.css(t[a].toString()))}n.css({overflow:"hidden"});n.bind("keyup change cut paste",function(){c()});e(window).bind("resize",f);n.bind("resize",f);n.bind("update",c);n.bind("blur",function(){if(r.height()<o){if(r.height()>s){n.height(r.height())}else{n.height(s)}}});n.bind("input paste",function(e){setTimeout(c,250)});c()})}})})(jQuery);
 
 // JQuery Notify by Antonio Villamarin <http://ant.onio.org> : MIT
-(function(e){
-	jQuery.fn.extend({
-		notify:function(options){
-			this.options = $.extend( {
-				show: true,
-				autoClose: 0,
-				close: true,
-				color: "#888",
-				background: "#FF9",
-				opacity: ".8",
-				message: "Message"
-			}, options);
-			
-			var active = this.options.show;
-
-			$('body').append('<div class="notify-message" style="display: none;"><span class="notify-close"></span><p>'+this.options.message+'</p></div><div class="notify-arrow" style="display: none;"></div>');
-			
-			$('.notify-arrow')
-				.css('background-color',this.options.background)
-				.css('z-index','101')
-				.css('position','absolute')
-				.css('top','0')
-				.css('right','50px')
-				.css('overflow','hidden')
-				.css('box-shadow','0 0 5px #444')
-				.css('opacity','0 0 5px #444')
-				.css('box-shadow',this.options.opacity)
-				.css('border-radius','0 0 5px 5px');
-				
-			$('.notify-arrow:before')
-				.css('diplay','block')
-				.css('padding','5px 15px')
-				.css('content','\25BC')
-				.css('color',this.options.color);
-
-			$('.notify-message')
-				.css('background-color',this.options.background)
-				.css('z-index','101')
-				.css('position','absolute')
-				.css('top','0')
-				.css('right','0')
-				.css('left','0')
-				.css('overflow','hidden')
-				.css('box-shadow','0 0 5px #444')
-				.css('opacity','0 0 5px #444')
-				.css('box-shadow',this.options.opacity)
-				.css('border-radius','0 0 5px 5px');
-				
-			$('.notify-message > p')
-				.css('margin','10px 20px')
-				.css('color',this.options.color)
-				.css('font-weight','bold');
-				
-			$('.notify-message > .notify-close:before')
-				.css('diplay','inline')
-				.css('float','right')
-				.css('margin','2px 15px 0 15px')
-				.css('content','\00D7')
-				.css('font-size','150%')
-				.css('font-weight','bold')
-				.css('color',this.options.color)
-
-		}
-	})
-})(jQuery);
+(function(e){jQuery.fn.extend({notify:function(e){this.options=$.extend({active:true,close:false,color:"#888",background:"#FF9",opacity:".9"},e);var t=this.options.close;$("body").append('<span class="notify-arrow"></span>');$(this).prepend('<span class="notify-close"></span>');$(this).addClass("notify-message");if(this.options.close){$("head").append("<style>.notify-arrow:before{display:block;font-size:20px;padding:5px 15px;content:'\\25BE';color:"+this.options.color+";}"+".notify-close:before{display:block;font-size:24px;float:right;margin:-7px -5px -7px 20px;content:'\\00D7';color:"+this.options.color+";}</style>")}else{$("head").append("<style>.notify-arrow:before{display:block;font-size:20px;padding:5px 15px;content:'\\25BE';color:"+this.options.color+";}"+".notify-close:before{display:block;font-size:20px;float:right;margin:-7px -5px -7px 20px;content:'\\25B4';color:"+this.options.color+";}</style>")}$(".notify-message").css("background-color",this.options.background).css("z-index","101").css("position","absolute").css("top","0").css("right","0").css("left","0").css("font-weight","bold").css("font-size","16px").css("padding","10px 20px").css("overflow","hidden").css("box-shadow","0 0 5px #444").css("opacity",this.options.opacity);$(".notify-arrow").css("background-color",this.options.background).css("z-index","101").css("position","absolute").css("top","0").css("right","50px").css("overflow","hidden").css("box-shadow","0 0 5px #444").css("opacity",this.options.opacity).css("border-radius","0 0 5px 5px");if(this.options.active){$(".notify-message").show();$(".notify-arrow").hide()}else{$(".notify-message").hide();if(!this.options.close){$(".notify-arrow").show()}else{$("notify-arrow").hide()}}$(".notify-arrow").click(function(){$(this).slideUp("slow");$(".notify-message").delay(500).slideDown("slow")});$(".notify-close").click(function(){$(".notify-message").slideUp("slow");if(!t){$(".notify-arrow").delay(500).slideDown("slow")}})}})})(jQuery);
 
 $(document).ready(function () {
 	$('textarea').elastic();
 	$('.tabs').tabify();
-	$('body').append('<div class="deal-arrow hide"></div>');
-	$('.close').click( function(){
-		$(this).parent('.msg').toggleClass('hide').fadeOut('slow');
-		$(this).parent('.deal').toggleClass('hide').slideUp('slow');
-		if( $(this).parent('.deal').hasClass('hide') ) {
-			$('.deal-arrow').delay(500).slideDown('slow');
-		}
-	});
-	$('.deal-arrow').click( function() {
-		$(this).slideUp('slow');
-		$('.deal').delay(500).slideDown('slow').toggleClass('hide');
-		
-	});
 });
 

@@ -627,49 +627,6 @@ ul.crumbs li:after							{	content: ">";
 												
 ul.crumbs li:last-child:after				{	content: ""; }
 
-/* Alert message on top
- ***********************************/
-
-.deal										{	background-color: #FF9;
-												z-index: 2;
-												position: absolute;
-												margin: 0;
-												top: 0;
-												left: 0;
-												right: 0;
-												overflow: hidden;
-												box-shadow: 0 0 5px #444;
-												opacity: .8; }
-	
-.deal p										{	margin: 10px 20px;
-												color: #444;
-												font-weight: bold; }
-
-.deal span.close:before						{	display: inline;
-												float: right;
-												margin: 2px 15px 0 15px;
-												content: '\00D7';
-												font-size: 150%;
-												font-weight: bold;
-												color: #888; }
-												
-.deal-arrow									{	background-color: #FF9;
-												z-index: 2;
-												position: absolute;
-												margin: 0;
-												top: 0;
-												right: 50px;
-												overflow: hidden;
-												box-shadow: 0 0 5px #444;
-												opacity: .8;
-												border-radius: 0 0 5px 5px;
-												display: none; }
-												
-.deal-arrow:before							{	display: block;
-												padding: 5px 15px;
-												content: '\25BC';
-												color: #444; }
-												
 /* Clearfix
  *******************/
 
