@@ -22,8 +22,10 @@
 		<link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
 		<link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
 		<link rel="apple-touch-icon" sizes="144x144" href="assets/images/apple-touch-icon-144x144.png">
+
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,300,700' rel='stylesheet' type='text/css'>
 		
-		<link rel="stylesheet" href="assets/css/gridcss.css">
+		<link rel="stylesheet" href="assets/css/grid.css">
 		<script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
 	</head>
 	<body>
@@ -61,6 +63,44 @@
 				</header>
 				<article>
 					<p>Loren ipsum.</p>
+					<form action="">
+						<label for="">Etiqueta</label>
+						<input type="text">
+						<label for="">Etiqueta</label>
+						<input type="text" class="alert">
+						<label for="">Etiqueta</label>
+						<input type="text">
+						<label for="">Select</label>
+						<select name="" id="">
+							<option value="">uno</option>
+							<option value="">dos</option>
+							<option value="">tres</option>
+							<option value="">cuatro</option>
+							<option value="">cinco</option>
+						</select>
+						<input type="radio" /><span class="radio">Radio 1</span>
+						<input type="radio" /><span class="radio">Radio 2</span>
+						<label for="">Checkbox</label>
+						<input type="checkbox" /><span class="checkbox">Radio 1</span>
+						<input type="checkbox" /><span class="checkbox">Radio 2</span>
+						<textarea name="" id="" ></textarea>
+						<input type="submit" value="Boton">
+						<input type="button" class="alert" value="Boton">
+						<input type="reset" value="Boton" disabled="disabled">
+						<a href="" class="btn soft">Boton</a>
+						<input type="submit" value="Boton" class="small">
+						<input type="submit" value="Boton" class="large">
+					</form>
+					<div>
+						<span class="tag">Tag</span>
+						<span class="tag alert"><a href="#">Alert</a></span>
+						<span class="tag light">Light</span>
+					</div>
+					<p>
+						<a href="#">Enlace de prueba</a>
+						Texto normal.
+					</p>
+
 				</article>
 				<footer>
 					<small class="right">-- Autor</small>
@@ -83,21 +123,6 @@
 			window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.9.0.min.js"><\/script>');
 		</script>
 		<script src="assets/js/gridcss.jquery.js"></script>
-
-		<!-- Configure plugins >
-		<script>
-			$(document).ready(function(){
-				// Load Notify
-				$('#idnotify').notify({ // Default values
-					active: true, // Show message (true) or arrow (false)
-					close: true, // Avoid close notify.
-					color: "#888", // Color of text.
-					background: "#FF6", // Background-color of notify.
-					opacity: ".8" // Opacity of message box.
-				});
-			});
-		</script>
-		<! -->
 
 	</body>
 
