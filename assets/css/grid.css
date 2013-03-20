@@ -276,8 +276,6 @@ row, .clearfix {
 
 /* Globals */
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,300,700);
-
 body {
 	background-color: #FFF;
 	color: #666;
@@ -337,7 +335,7 @@ a:hover, a:focus {
 	color: #26F;
 }
 
-pre, code, blockquote, blockquote p, q {
+pre, code, blockquote, q {
 	display: block;
 	background-color: #EEE;
 	border: 1px solid #DDD;
@@ -469,7 +467,7 @@ input[type="checkbox"] {
 input[type="submit"], input[type="reset"],
 input[type="button"], button, a.btn {
 	background-color: #EEE;
-	border-color: #DDE;
+	border: 1px solid #DDE;
 	color: #666;
 	display: inline;
 	font-size: 120%;

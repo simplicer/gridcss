@@ -23,6 +23,9 @@
 		<link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
 		<link rel="apple-touch-icon" sizes="144x144" href="assets/images/apple-touch-icon-144x144.png">
 
+		<!-- Font import -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,300,700' rel='stylesheet' type='text/css'>
+
 		<link rel="stylesheet" href="assets/css/grid.min.css">
 		<script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
 	</head>
@@ -32,125 +35,236 @@
 		<![endif]-->
 	        
 		<!-- Header -->
-		<header class="row">
-			<hgroup class="col12">
-				<h1>Title</h1>
-				<h4>Subtitle</h4>
-			</hgroup>
-			<nav class="col12">
-				<ul>
-					<li>One</li>
-				</ul>
-			</nav>
+		<header class="container">
+			<div class="row">
+				<hgroup class="col12">
+					<h1>Ejemplo Grid.CSS</h1>
+				</hgroup>
+			</div>
 		</header>
+
 		<!-- Section -->
 		<article class="row">
 			<!-- Aside -->
-			<aside class="col4">
+			<aside class="col3">
 				<nav>
-					<h2>Menu One</h2>
+					<h4>Grid.CSS</h4>
 					<ul>
-						<li><a href="#">Link</a></li>
+						<li><a href="#">Introducción</a></li>
+						<li><a href="#">Medias</a></li>
+						<li><a href="#">Grid</a></li>
+						<li><a href="#">Offset</a></li>
+						<li><a href="#">Tipografía</a></li>
+						<li><a href="#">Formularios</a></li>
+						<li><a href="#">Botones</a></li>
+						<li><a href="#">Etiquetas</a></li>
+						<li><a href="#">Listas</a></li>
+						<li><a href="#">Codigo</a></li>
+						<li><a href="#">Goodies</a></li>
 					</ul>
 				</nav>
 			</aside>
 			<!-- Main section -->
-			<section class="col8">
-				<header>
-					<h2>Ejemplo</h2>
-				</header>
-				<article>
-					<h2>Tipografía</h2>
-					<p>Títulos 
-					<h1>Titulo H1</h1>
-					<h2>Titulo H2</h2>
-					<h3>Titulo H3</h3>
-					<h4>Titulo H4</h4>
-					<h5>Titulo H5</h5>
-					<h6>Titulo H6</h6>
-					<p>Loren ipsum.</p>
-					<form action="">
-						<label for="">Etiqueta</label>
-						<input type="text" class="red">
-						<label for="">Etiqueta</label>
-						<input type="text" class="yellow">
-						<label for="">Etiqueta</label>
-						<input type="text" class="green">
-						<label for="">Select</label>
-						<select name="" id="">
-							<option value="">uno</option>
-							<option value="">dos</option>
-							<option value="">tres</option>
-							<option value="">cuatro</option>
-							<option value="">cinco</option>
-						</select>
-						<input type="radio" /><span class="radio">Radio 1</span>
-						<input type="radio" /><span class="radio">Radio 2</span>
-						<label for="">Checkbox</label>
-						<input type="checkbox" /><span class="checkbox">Radio 1</span>
-						<input type="checkbox" /><span class="checkbox">Radio 2</span>
-						<textarea name="" id="" ></textarea>
-						<div>
-							<input type="button" class="tiny" value="Boton">
-							<input type="button" class="small" value="Boton">
-							<input type="button" value="Boton">
-							<input type="button" class="large" value="Boton">
-							<input type="button" class="huge" value="Boton">
-						</div><div>
-							<input type="button" value="Boton">
-							<input type="button" class="red" value="Boton">
-							<input type="button" class="yellow" value="Boton">
-							<input type="button" class="green" value="Boton">
-							<input type="button" class="blue" value="Boton">
-							<input type="button" class="orange" value="Boton">
-							<input type="button" class="black" value="Boton">
-							<input type="button" class="violet" value="Boton">
-							<input type="button" class="cyan" value="Boton">
+			<article class="col9">
+				<section>
+					<header><h2>Grid</h2></header>
+					<article id="grid">
+						<div class="row">
+							<div class="center col1">Col1</div>
+							<div class="center col11">Col11</div>
 						</div>
-					</form>
-					<div>
-						<span class="tag"><a href="#">Enlace</a></span>
-						<span class="tag red"><a href="#">Enlace</a></span>
-						<span class="tag yellow"><a href="#">Enlace</a></span>
-						<span class="tag orange"><a href="#">Enlace</a></span>
-						<span class="tag green"><a href="#">Enlace</a></span>
-						<span class="tag blue"><a href="#">Enlace</a></span>
-						<span class="tag black"><a href="#">Enlace</a></span>
-						<span class="tag violet"><a href="#">Enlace</a></span>
-						<span class="tag cyan"><a href="#">Enlace</a></span>
-					</div>
-					<div>
-						<span class="tag">Etiqueta</span>
-						<span class="tag red">Etiqueta</span>
-						<span class="tag yellow">Etiqueta</span>
-						<span class="tag orange">Etiqueta</span>
-						<span class="tag green">Etiqueta</span>
-						<span class="tag blue">Etiqueta</span>
-						<span class="tag black">Etiqueta</span>
-						<span class="tag violet">Etiqueta</span>
-						<span class="tag cyan">Etiqueta</span>
-					</div>
-					<p>
-						<a href="#">Enlace de prueba</a>
-						Texto normal.
-					</p>
-					<pre><code>&lt;header&gt;
-								&lt;hgroup&gt;
-									&lt;h1&gt;Titulo&lt;/h1&gt;
-									&lt;h2&gt;Subtitulo&lt;/h2&gt;
-								&lt;/hgroup&gt;
-							&lt;/header&gt;</code></pre>
-					<blockquote>
-						Prueba de quote
-						<cite>Prueba de cita</cite>
-					</blockquote>
+						<div class="row">
+							<div class="center col2">Col2</div>
+							<div class="center col10">Col10</div>
+						</div>
+						<div class="row">
+							<div class="center col3">Col3</div>
+							<div class="center col9">Col9</div>
+						</div>
+						<div class="row">
+							<div class="center col4">Col4</div>
+							<div class="center col8">Col8</div>
+						</div>
+						<div class="row">
+							<div class="center col5">Col5</div>
+							<div class="center col7">Col7</div>
+						</div>
+						<div class="row">
+							<div class="center col6">Col6</div>
+							<div class="center col6">Col6</div>
+						</div>
+						<div class="row">
+							<div class="center col7">Col7</div>
+							<div class="center col5">Col5</div>
+						</div>
+						<div class="row">
+							<div class="center col8">Col8</div>
+							<div class="center col4">Col4</div>
+						</div>
+						<div class="row">
+							<div class="center col9">Col9</div>
+							<div class="center col3">Col3</div>
+						</div>
+						<div class="row">
+							<div class="center col10">Col10</div>
+							<div class="center col2">Col2</div>
+						</div>
+						<div class="row">
+							<div class="center col11">Col11</div>
+							<div class="center col1">Col1</div>
+						</div>
+					</article>
+					<footer><button class="blue">Ver código</button></footer>
+				</section>
+				<section>
+					<header><h2>Offset</h2></header>
+					<article id="offset">
+						<div class="row">
+							<div class="center col12">Col12</div>
+						</div>
+						<div class="row">
+							<div class="center col11 offset1">Col11 Offset1</div>
+						</div>
+						<div class="row">
+							<div class="center col10 offset2">Col10 Offset2</div>
+						</div>
+						<div class="row">
+							<div class="center col9 offset3">Col9 Offset3</div>
+						</div>
+						<div class="row">
+							<div class="center col8 offset4">Col8 Offset4</div>
+						</div>
+						<div class="row">
+							<div class="center col7 offset5">Col7 Offset5</div>
+						</div>
+						<div class="row">
+							<div class="center col6 offset6">Col6 Offset6</div>
+						</div>
+						<div class="row">
+							<div class="center col5 offset7">Col5 Offset7</div>
+						</div>
+						<div class="row">
+							<div class="center col4 offset8">Col4 Offset8</div>
+						</div>
+						<div class="row">
+							<div class="center col3 offset9">Col3 Offset9</div>
+						</div>
+						<div class="row">
+							<div class="center col2 offset10">Col2 Offset10</div>
+						</div>
+						<div class="row">
+							<div class="center col1 offset11">Col1</div>
+						</div>
+					</article>
+					<footer><button class="blue">Ver código</button></footer>
+				</section>
+				<section>
+					<header><h2>Tipografia</h2></header>
+					<article id="tipografia">
+						<h6>Tipografía para los títulos</h6>
+						<h1>H1 Titulo</h1>
+						<h2>H2 Titulo</h2>
+						<h3>H3 Titulo</h3>
+						<h4>H4 Titulo</h4>
+						<h5>H5 Titulo</h5>
+						<h6>H6 Titulo</h6>
 
-				</article>
-				<footer class="right">
-					<small>-- Autor</small>
-				</footer>
-			</section>
-		</article>
+						<h6>Codigo fuente</h6>
+						<pre><code>&lt;header&gt;
+	&lt;hgroup&gt;
+		&lt;h1&gt;Titulo&lt;/h1&gt;
+		&lt;h2&gt;Subtitulo&lt;/h2&gt;
+	&lt;/hgroup&gt;
+&lt;/header&gt;</code></pre>
+					
+						<h6>Citas y blockquotes</h6>
+						<blockquote>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae voluptates sapiente quasi cum ratione labore non maxime tempore voluptatibus magnam animi dolorem modi voluptatum aliquid quaerat dolore eos!
+							<cite>Debitis possimus.</cite>
+						</blockquote>
+						<h6>Párrafos y enlaces</h6>
+						<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui numquam vitae eos nostrum eligendi facilis perferendis veritatis illo fuga aut. Beatae fugit officia ex quos debitis nulla autem odit reprehenderit.</span>
+							<span>Repellat explicabo possimus ullam omnis deleniti magni tenetur optio debitis perspiciatis quas tempore quod accusamus. Illo nulla nam iste quibusdam blanditiis perferendis voluptatem facilis itaque similique obcaecati amet dolores sint!</span>
+							<span>Ut fugiat corporis perspiciatis iusto temporibus quidem soluta nesciunt tempore officiis aliquid quaerat laboriosam obcaecati sint cupiditate ab quia earum recusandae ipsum dolor facere qui voluptatem architecto error in voluptatum.</span>
+							<span><a href="#">Tempora</a> quod delectus molestiae iusto doloremque vitae nobis. Delectus eaque vero voluptate ipsam incidunt excepturi itaque esse quas aliquid doloremque necessitatibus saepe. Molestias magnam autem esse corporis excepturi voluptate mollitia.</span>
+							<span>Sint voluptatibus voluptas officiis illum blanditiis cum non odit minima ipsa quas officia ut numquam nulla expedita minus omnis quaerat nihil quam laboriosam animi odio voluptatem quidem et error impedit!</span></p>
+					</article>
+					<footer></footer>
+				</section>
+				<section>
+					<header><h2>Formularios</h2></header>
+					<article id="formularios">
+						<h6>Formularios</h6>
+						<form>
+							<label for="">Campo</label>	
+							<input type="text">
+							<label for="">Campo con contorno verde de ok</label>	
+							<input type="text" class="green">
+							<label for="">Campo con contorno amarillo de aviso</label>	
+							<input type="text" class="yellow">
+							<label for="">Campo con contorno rojo de alerta o error</label>
+							<input type="text" class="red">
+							<label for="">Select</label>	
+							<select name="" id="">
+								<option value="">Uno</option>
+								<option value="">Dos</option>
+								<option value="">Tres</option>
+								<option value="">Cuatro</option>
+								<option value="">Cinco</option>
+							</select>
+							<label for="">Radio</label>
+							<fieldset>
+								<input type="radio"><span>Radio 1</span>
+								<input type="radio"><span>Radio 2</span>
+								<input type="radio"><span>Radio 3</span>
+							</fieldset>
+							<label for="">Checkbox</label>
+							<fieldset>
+								<input type="checkbox"><span>Checkbox 1</span>
+								<input type="checkbox"><span>Checkbox 2</span>
+								<input type="checkbox"><span>Checkbox 3</span>
+							</fieldset>
+							<fieldset>
+								<input type="submit" value="Enviar">
+								<input type="reset" value="Borrar formulario">
+							</fieldset>
+						</form>
+					</article>
+					<footer><button class="blue">Ver código</button></footer>
+				</section>
+				<section>
+					<header><h2>Botones</h2></header>
+					<article id="botones">
+						<p>Los botones pueden formatearse como tal cuando se usan las etiquetas "&lt;button&gt;&lt;/button&gt;", "&lt;input type="button"&gt;", "&lt;a href="#" class="btn"&gt;&lt;/a&gt;", "&lt;input type="submit"&gt;", "&lt;input type="reset"&gt;".</p>
+						<h6>Tamaño de los botones</h6>
+						<fieldset>
+							<button class="tiny">Tiny</button>
+							<button class="small">Small</button>
+							<button>Normal</button>
+							<button class="large">Large</button>
+							<button class="huge">Huge</button>
+						</fieldset>
+						<h6>Colores de los botones</h6>
+						<fieldset>
+							<button>Normal</button>
+							<button class="blue">Blue</button>
+							<button class="green">Green</button>
+						</fieldset>
+						<fieldset>
+							<button class="red">Red</button>
+							<button class="orange">Orange</button>
+							<button class="yellow">Yellow</button>
+						</fieldset>
+						<fieldset>
+							<button class="violet">Violet</button>
+							<button class="cyan">Cyan</button>
+							<button class="black">Black</button>
+						</fieldset>
+					</article>
+					<footer><button class="blue">Ver código</button></footer>
+				</section>
+			</article>
+
 		<!-- Footer -->
 		<footer class="row">
 			<div class="col6" id="copyright">
