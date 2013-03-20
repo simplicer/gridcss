@@ -34,41 +34,54 @@
 			<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 		<![endif]-->
 	        
-		<!-- Header -->
-		<header class="container">
+		<!-- Header 
+		<header class="container" id="header">
 			<div class="row">
 				<hgroup class="col12">
 					<h1>Ejemplo Grid.CSS</h1>
 				</hgroup>
 			</div>
-		</header>
+		</header>-->
 
 		<!-- Section -->
 		<article class="row">
 			<!-- Aside -->
-			<aside class="col3">
+			<aside class="col3" id="navigation">
 				<nav>
 					<h4>Grid.CSS</h4>
 					<ul>
-						<li><a href="#">Introducción</a></li>
-						<li><a href="#">Medias</a></li>
-						<li><a href="#">Grid</a></li>
-						<li><a href="#">Offset</a></li>
-						<li><a href="#">Tipografía</a></li>
-						<li><a href="#">Formularios</a></li>
-						<li><a href="#">Botones</a></li>
-						<li><a href="#">Etiquetas</a></li>
-						<li><a href="#">Listas</a></li>
-						<li><a href="#">Codigo</a></li>
-						<li><a href="#">Goodies</a></li>
+						<li><a href="#intro">Introducción</a></li>
+						<li><a href="#medias">Medias</a></li>
+						<li><a href="#grid">Grid</a></li>
+						<li><a href="#offset">Offset</a></li>
+						<li><a href="#anidados">Anidados</a></li>
+						<li><a href="#tipografia">Tipografía</a></li>
+						<li><a href="#listas">Listas</a></li>
+						<li><a href="#goodies">Goodies</a></li>
+						<li><a href="#formularios">Formularios</a></li>
+						<li><a href="#botones">Botones</a></li>
+						<li><a href="#etiquetas">Etiquetas</a></li>
+						<li><a href="#codigo">Codigo</a></li>
 					</ul>
 				</nav>
 			</aside>
 			<!-- Main section -->
-			<article class="col9">
-				<section>
+			<article class="col9 offset3" id="content">
+				<section id="intro">
+					<header><h2>Introducción</h2></header>
+					<article>
+					</article>
+					<footer></footer>
+				</section>
+				<section id="medias">
+					<header><h2>Medias</h2></header>
+					<article>
+					</article>
+					<footer></footer>
+				</section>
+				<section id="grid">
 					<header><h2>Grid</h2></header>
-					<article id="grid">
+					<article>
 						<div class="row">
 							<div class="center col1">Col1</div>
 							<div class="center col11">Col11</div>
@@ -114,11 +127,11 @@
 							<div class="center col1">Col1</div>
 						</div>
 					</article>
-					<footer><button class="blue">Ver código</button></footer>
+					<footer><button class="blue codigo">Ver código</button></footer>
 				</section>
-				<section>
+				<section id="offset">
 					<header><h2>Offset</h2></header>
-					<article id="offset">
+					<article>
 						<div class="row">
 							<div class="center col12">Col12</div>
 						</div>
@@ -156,19 +169,50 @@
 							<div class="center col1 offset11">Col1</div>
 						</div>
 					</article>
-					<footer><button class="blue">Ver código</button></footer>
+					<footer><button class="blue codigo">Ver código</button></footer>
 				</section>
-				<section>
+				<section id="anidados">
+					<header><h2>Grids anidados</h2></header>
+					<article>
+						<p>
+							Las celdas del grid pueden anidarse unas dentro de otras. También pueden tener bordes sin que se pasen a la siguiente fila.
+						</p>
+						<div class="row">
+							<div class="col12">
+								<div class="row">
+									<div class="center col3">
+										Col3
+										<div class="row">
+											<div class="center col6">Col6</div>
+											<div class="center col6">Col6</div>
+										</div>
+									</div>
+									<div class="center col9">
+										Col9
+										<div class="row">
+											<div class="center col3">Col3</div>
+											<div class="center col6">Col6</div>
+											<div class="center col3">Col3</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+					<footer><button class="blue codigo">Ver código</button></footer>
+				</section>
+				<section id="tipografia">
 					<header><h2>Tipografia</h2></header>
-					<article id="tipografia">
+					<article>
 						<h6>Tipografía para los títulos</h6>
-						<h1>H1 Titulo</h1>
-						<h2>H2 Titulo</h2>
-						<h3>H3 Titulo</h3>
-						<h4>H4 Titulo</h4>
-						<h5>H5 Titulo</h5>
-						<h6>H6 Titulo</h6>
-
+						<blockquote>
+							<h1>H1 Titulo</h1>
+							<h2>H2 Titulo</h2>
+							<h3>H3 Titulo</h3>
+							<h4>H4 Titulo</h4>
+							<h5>H5 Titulo</h5>
+							<h6>H6 Titulo</h6>
+						</blockquote>
 						<h6>Codigo fuente</h6>
 						<pre><code>&lt;header&gt;
 	&lt;hgroup&gt;
@@ -191,9 +235,73 @@
 					</article>
 					<footer></footer>
 				</section>
-				<section>
+				<section id="listas">
+					<header><h2>Listas</h2></header>
+					<article>
+						<p>Listas no numeradas</p>
+						<ul>
+							<li>Item 1</li>
+							<li>Item 2</li>
+							<li>Item 3</li>
+						</ul>
+						<p>Listas numeradas</p>
+						<ol>
+							<li>Item 1</li>
+							<li>Item 2</li>
+							<li>Item 3</li>
+						</ol>
+						<p>Listas mezcladas</p>
+						<ol>
+							<li>Item 1
+								<ul>
+									<li>Item 1
+										<ol>
+											<li>Item 1</li>
+											<li>Item 2</li>
+											<li>Item 3</li>
+										</ol>
+									</li>
+									<li>Item 2
+										<ol>
+											<li>Item 1</li>
+											<li>Item 2</li>
+											<li>Item 3</li>
+										</ol>
+									</li>
+								</ul>
+							</li>
+							<li>Item 2
+								<ol>
+									<li>Item 1
+										<ul>
+											<li>Item 1</li>
+											<li>Item 2</li>
+											<li>Item 3</li>
+										</ul>
+									</li>
+									<li>Item 2
+										<ul>
+											<li>Item 1</li>
+											<li>Item 2</li>
+											<li>Item 3</li>
+										</ul>
+									</li>
+								</ol>
+							</li>
+						</ol>
+
+					</article>
+					<footer></footer>
+				</section>
+				<section id="goodies">
+					<header><h2>Goodies: Pequeñas utilidades</h2></header>
+					<article>
+					</article>
+					<footer></footer>
+				</section>
+				<section id="formularios">
 					<header><h2>Formularios</h2></header>
-					<article id="formularios">
+					<article>
 						<h6>Formularios</h6>
 						<form>
 							<label for="">Campo</label>	
@@ -224,25 +332,30 @@
 								<input type="checkbox"><span>Checkbox 2</span>
 								<input type="checkbox"><span>Checkbox 3</span>
 							</fieldset>
+							<label for="">Textarea</label>
+							<textarea></textarea>
 							<fieldset>
 								<input type="submit" value="Enviar">
 								<input type="reset" value="Borrar formulario">
 							</fieldset>
 						</form>
 					</article>
-					<footer><button class="blue">Ver código</button></footer>
+					<footer><button class="blue codigo">Ver código</button></footer>
 				</section>
-				<section>
+				<section id="botones">
 					<header><h2>Botones</h2></header>
-					<article id="botones">
+					<article>
 						<p>Los botones pueden formatearse como tal cuando se usan las etiquetas "&lt;button&gt;&lt;/button&gt;", "&lt;input type="button"&gt;", "&lt;a href="#" class="btn"&gt;&lt;/a&gt;", "&lt;input type="submit"&gt;", "&lt;input type="reset"&gt;".</p>
 						<h6>Tamaño de los botones</h6>
 						<fieldset>
 							<button class="tiny">Tiny</button>
 							<button class="small">Small</button>
 							<button>Normal</button>
-							<button class="large">Large</button>
+						</fieldset>
+						<fieldset>
 							<button class="huge">Huge</button>
+							<button class="large">Large</button>
+							<button>Normal</button>
 						</fieldset>
 						<h6>Colores de los botones</h6>
 						<fieldset>
@@ -261,26 +374,92 @@
 							<button class="black">Black</button>
 						</fieldset>
 					</article>
-					<footer><button class="blue">Ver código</button></footer>
+					<footer><button class="blue codigo">Ver código</button></footer>
+				</section>
+				<section id="etiquetas">
+					<header><h2>Etiquetas</h2></header>
+					<article>
+						<p>Pueden crarse etiquetas de forma simple, con o sin enlace en su interior</p>
+						<p>Con enlace</p>
+						<div class="row">
+							<span class="tag"><a href="#">Normal</a></span>
+							<span class="tag blue"><a href="#">Blue</a></span>
+							<span class="tag green"><a href="#">Green</a></span>
+							<span class="tag red"><a href="#">Red</a></span>
+							<span class="tag orange"><a href="#">Orange</a></span>
+							<span class="tag yellow"><a href="#">Yellow</a></span>
+							<span class="tag violet"><a href="#">Violet</a></span>
+							<span class="tag cyan"><a href="#">Cyan</a></span>
+							<span class="tag black"><a href="#">Black</a></span>
+						</div>
+						<p>Sin enlace</p>
+						<div class="row">
+							<span class="tag">Normal</span>
+							<span class="tag blue">Blue</span>
+							<span class="tag green">Green</span>
+							<span class="tag red">Red</span>
+							<span class="tag orange">Orange</span>
+							<span class="tag yellow">Yellow</span>
+							<span class="tag violet">Violet</span>
+							<span class="tag cyan">Cyan</span>
+							<span class="tag black">Black</span>
+						</div>
+					</article>
+					<footer><button class="blue codigo">Ver código</button></footer>
+				</section>
+				<section id="codigo">
+					<header><h2>Código</h2></header>
+					<article>
+					</article>
+					<footer></footer>
 				</section>
 			</article>
 
 		<!-- Footer -->
 		<footer class="row">
-			<div class="col6" id="copyright">
-				<small>&copy; 2013, <a href="http://ant.onio.org">Antonio Villamarin</a></small>
-			</div>
-			<div class="col6 right" id="powered">
-				<small>Powered by <a href="http://www.gridcss.com">Grid CSS</a> MIT License</small>
+			<div class="col12 center">
+				<p>
+					<small>&copy; 2013, <a href="http://ant.onio.org">Antonio Villamarin</a>. Powered by <a href="http://www.gridcss.com">Grid CSS</a> MIT License</small>
+				</p>
 			</div>
 		</footer>
 
 		<!-- Load jQuery and Plugins -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 		<script>
-			window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.9.0.min.js"><\/script>');
+			window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.9.0.min.js"></script>');
 		</script>
-		<script src="assets/js/gridcss.jquery.js"></script>
+		<script>
+			$(document).on("ready", function(){
+				var a = 0;
+				$(".codigo").on("click", function(event) {
+					event.preventDefault();
+					if( $(this).hasClass('mostrado') ) {
+						$(this)
+							.parent()
+							.children('.fuente')
+							.toggle();
+						if( $(this).text() == 'Ocultar' ) {
+							$(this).text('Ver código');
+						} else {
+							$(this).text('Ocultar');
+						}
+					} else {
+						var e = $(this)
+							.parent()
+							.parent()
+							.children('article')
+							.html()
+							.replace(/[<>\t]/g, function(m) { return {'<':'&lt;','>':'&gt;','\t':'  '}[m]});
+						$(this)
+							.parent()
+							.append('<div class="fuente"><pre style="font-size:60%">'+e+'</pre></div>');
+						$(this).text('Ocultar');
+						$(this).addClass('mostrado');
+					}
+				});
+			});
+		</script>
 
 	</body>
 

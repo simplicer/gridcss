@@ -725,34 +725,6 @@ button:focus.cyan, a:focus.btn.cyan{
 	border-color: #1AA;
 }
 
-/* Lists */
-
-ul, ol {
-	margin-bottom: 20px;
-	margin-left: 20px;
-}
-
-ul {
-	list-style: none;
-}
-
-ol {
-	list-style: decimal;
-	padding-left: 20px;
-}
-
-ul ul, ul ol, ol ol, ol ul {
-	margin: 2px 0 2px 20px;
-}
-
-ul ol, ol ol {
-	padding-left: 40px;
-}
-
-li {
-	margin-bottom: 2px;
-}
-
 /* Tags */
 
 .tag {
