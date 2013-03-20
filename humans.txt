@@ -3,34 +3,31 @@
 
 # TEAM
 
-	Antonio Villamarin -- http://ant.onio.org -- Mojacar, Almeria, Andalucia, Spain
+	Antonio Villamarin -- ant.onio.org -- @antvillamarin -- villamarin.github.com -- Mojacar, Almeria, Andalucia, Spain
 
 # THANKS
 
 	HTML Definitions -- HTML5 Boilerplate -- http://html5boilerplate.com
-	JQuery Tabify, JQuery Elastic -- Jan Jarfalk -- http://www.unwrongest.com
-	Reset CSS -- Eric Meyer -- http://meyerweb.com/eric/tools/css/reset/
+	Normalize CSS -- Nicolas Gallagher -- http://git.io/normalize
 	JavaScript -- JQuery -- http://www.jquery.com
-	CSS Tabs & some components inspirated by -- Skeleton Framework -- http://www.getskeleton.com
 	Modernzr -- http://modernizr.com/
 	Fonts -- http://www.google.com/webfonts
-	CSS minifier -- http://www.cssminifier.com/
 
 # SITE
 
 	Site: http://www.gridcss.com
-	Last update: 2013/02/01
+	Last update: 2013/03/20
 	Language: English / Castellano
 	Doctype: HTML5
-	IDE: Geany for linux
-	Hosting: GitHub by git for linux
+	IDE: Sublime Text 2
+	Hosting: GitHub
 	Generator: Jekyll
-	OS: Ubuntu 12.10
+	OS: CrunchBang
 
 # TECHNOLOGY COLOPHON
 
     HTML: HTML5
-    CSS: CSS3, Eric Meyer Reset
-    JavaScript: jQuery, Tabify, Elastic, Modernizr
+    CSS: CSS3, Normalize CSS
+    JavaScript: jQuery, Modernizr
     crossdomain.xml, index headers, robots.txt: HTML5 Boilerplate
     
