@@ -1,0 +1,33 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+	Antonio Villamarin -- ant.onio.org -- @antvillamarin -- villamarin.github.com -- Mojacar, Almeria, Andalucia, Spain
+
+# THANKS
+
+	HTML Definitions -- HTML5 Boilerplate -- http://html5boilerplate.com
+	Normalize CSS -- Nicolas Gallagher -- http://git.io/normalize
+	JavaScript -- JQuery -- http://www.jquery.com
+	Modernzr -- http://modernizr.com/
+	Fonts -- http://www.google.com/webfonts
+
+# SITE
+
+	Site: http://www.gridcss.com
+	Last update: 2013/03/20
+	Language: English / Castellano
+	Doctype: HTML5
+	IDE: Sublime Text 2
+	Hosting: GitHub
+	Generator: Jekyll
+	OS: CrunchBang
+
+# TECHNOLOGY COLOPHON
+
+    HTML: HTML5
+    CSS: CSS3, Normalize CSS
+    JavaScript: jQuery, Modernizr
+    crossdomain.xml, index headers, robots.txt: HTML5 Boilerplate
+    

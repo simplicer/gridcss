@@ -23,9 +23,7 @@
 		<link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
 		<link rel="apple-touch-icon" sizes="144x144" href="assets/images/apple-touch-icon-144x144.png">
 
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,300,700' rel='stylesheet' type='text/css'>
-		
-		<link rel="stylesheet" href="assets/css/grid.css">
+		<link rel="stylesheet" href="assets/css/grid.min.css">
 		<script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
 	</head>
 	<body>
@@ -56,13 +54,14 @@
 					</ul>
 				</nav>
 			</aside>
-			<!-- Main article -->
+			<!-- Main section -->
 			<section class="col8">
 				<header>
-					<h2>Article</h2>
+					<h2>Ejemplo</h2>
 				</header>
 				<article>
 					<h2>Tipografía</h2>
+					<p>Títulos 
 					<h1>Titulo H1</h1>
 					<h2>Titulo H2</h2>
 					<h3>Titulo H3</h3>
@@ -135,10 +134,20 @@
 						<a href="#">Enlace de prueba</a>
 						Texto normal.
 					</p>
+					<pre><code>&lt;header&gt;
+								&lt;hgroup&gt;
+									&lt;h1&gt;Titulo&lt;/h1&gt;
+									&lt;h2&gt;Subtitulo&lt;/h2&gt;
+								&lt;/hgroup&gt;
+							&lt;/header&gt;</code></pre>
+					<blockquote>
+						Prueba de quote
+						<cite>Prueba de cita</cite>
+					</blockquote>
 
 				</article>
-				<footer>
-					<small class="right">-- Autor</small>
+				<footer class="right">
+					<small>-- Autor</small>
 				</footer>
 			</section>
 		</article>
@@ -147,8 +156,8 @@
 			<div class="col6" id="copyright">
 				<small>&copy; 2013, <a href="http://ant.onio.org">Antonio Villamarin</a></small>
 			</div>
-			<div class="col6" id="powered">
-				<small class="right">Powered by <a href="http://www.gridcss.com">Grid CSS</a> MIT License</small>
+			<div class="col6 right" id="powered">
+				<small>Powered by <a href="http://www.gridcss.com">Grid CSS</a> MIT License</small>
 			</div>
 		</footer>
 
